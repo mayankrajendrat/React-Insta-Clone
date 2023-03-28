@@ -1,0 +1,19 @@
+.navbar {
+    border-bottom: 2px solid green;
+}
+
+.new-post-container {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    min-width: 250px;
+}
+
+.btn-container {
+    margin:10px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
