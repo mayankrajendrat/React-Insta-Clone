@@ -1,0 +1,12 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.home-content {
+    display: flex !important;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    min-width: 350px;
+}
