@@ -9,6 +9,9 @@
 .post-card{
     min-width: 300px
 }
+.dot {
+    font-size: 10px;
+}
 
 .card-header, .card-footer .wrapper {
     display: flex;
@@ -24,6 +27,7 @@
 }
 
 .card-footer img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 } 
+.date {font-size: 12px;}

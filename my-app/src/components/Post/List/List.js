@@ -22,7 +22,7 @@ export default function AllPost() {
             <Header />
 
             <div className="list-post-container">
-            { posts.length == 0 ? <h3>No post available...</h3> : 
+            { posts.length === 0 ? <h3>No post available...</h3> : 
         posts.map(post => { 
 
 return <>
@@ -39,7 +39,7 @@ return <>
                                 </div>
                             </Card.Header>
                             <Card.Body className="card-body">
-                                <img src={`localhost:8000/${post.image}`} />
+                                <img src={`${process.env.NODE_API}/${post.image}`} alt="" />
                             </Card.Body>
                             <Card.Footer className="card-footer">
                                 <div className="wrapper">
@@ -49,11 +49,11 @@ return <>
                                         <p> {post.likes}</p>
                                     </div>
                                     <div className="col-5">
-                                        <span className='dot'>{post.date}</span>
+                                        <span className='date'>{post.date}</span>
                                     </div>
                                 </div>
                                 <div col-12 d-block>
-                                    <h3> {post.description}</h3>
+                                    <h5> {post.description}</h5>
                                 </div>
                             </Card.Footer>
                         </Card>
