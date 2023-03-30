@@ -8,5 +8,5 @@
     display: flex !important;
     flex-wrap: nowrap;
     flex-direction: row;
-    min-width: 150px;
+    min-width: 350px;
 }

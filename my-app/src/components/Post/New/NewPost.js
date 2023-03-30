@@ -9,7 +9,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 import './NewPost.css';
 
-
+import Header from "../Header/Header";
 
 export default function NewPost() {
 const [formData, setFormData]=useState({
@@ -29,18 +29,7 @@ function captureForm(event){
 
     return (
         <>
-            <Navbar>
-                <Container>
-                    <Navbar.Brand href="#home">
-                        <img src={Logo} alt="Logo" />
-                        <span>Insta Clone</span>
-                    </Navbar.Brand>
-                    <Navbar.Toggle />
-                    <Navbar.Collapse className="justify-content-end">
-                        <img src={Camera} alt="Logo" />
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+            <Header />
 
             <div className="new-post-container">
                 <Card >
